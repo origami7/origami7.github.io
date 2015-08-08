@@ -1,0 +1,74 @@
+# Site settings
+title: origami Main.page
+description: Resume for Tiange Wu
+favicon: /assets/img/avatar.JPG
+baseurl:
+url:
+
+# Build settings
+markdown: kramdown
+
+# Author settings
+author:
+  name: Tiange John Wu
+  title: Full Stack Developer
+  email: tjw001@ucsd.edu
+  github: origami7
+  linkedin: tiangewu
+  gavatar: /assets/img/main_photo.jpg
+  workHistory:
+    - work1:
+      company: Hulu
+      location: Santa Monica, California
+      title: DevOps Software Development Intern
+      started: 2015
+      duration: (June 2015 - August 2015)
+      description: As a member of the DevOps team, I update and create internal tools for the entire dev team. My main project was an SSL certificate management application written in Django. It simplifies the viewing and creating certificates for devices using wrapper classes on openssl and also allows for easier automation of certificate renewal/creation. I migrated the techblog at Hulu to use Jekyll as an alternative to Wordpress to give more power to developers. By using Jekyll for the blogs and Ruby on Rails for the actual site, this would allow Hulu to have a more consistent stack.
+    - work2:
+      company: Center for Applied Internet Data Analysis (CAIDA)
+      location: San Diego, California
+      title: Research Experience Undergraduate
+      started: 2014
+      duration: (2014 - 2015)
+      description: Worked with scamper, a parallelized packet prober, to design tests to observe protocols that servers are using to handle common network problems such as Byte Counting to handle the expansion of the send window. Used C to integrate these tests into scamper and Perl to process packet traces and classify the server accordingly. 
+  educationHistory:
+    - education1:
+      organization: University of California, San Diego
+      degree: Bachelor
+      major: Computer Science
+      started: 2013
+      duration: (2013 - Current)
+    - eductation2:
+      organization: Torrey Pines High School
+      started: 2009
+      duration: (2009 - 2013)
+  languages:
+    - language2:
+      name: English
+      proficiency: Native
+    - language1:
+      name: Chinese
+      proficiency: Proficient
+  programmingSkills:
+    - skill:
+      name: C/C++
+    - skill:
+      name: Python
+    - skill:
+      name: Django
+    - skill:
+      name: OCaml
+    - skill:
+      name: HTML
+    - skill:
+      name: Javascript
+    - skill:
+      name: CSS
+    - skill:
+      name: Java
+    - skill:
+      name: Scala
+    - skill:
+      name: MySQL
+    - skill:
+      name: Perl

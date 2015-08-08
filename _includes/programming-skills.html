@@ -1,0 +1,15 @@
+<h3 class="title with-icon"><span class="fa fa-code cat-title"></span> Programming Skills</h3>
+<div class="grid-block" style="padding-top: 25px;">
+  {% for programmingSkill in site.author.programmingSkills %}
+  {% if programmingSkill.name %}
+  <div style="display: inline-block; margin-bottom:25px; "><span class="label label-primary label-skills">{{ programmingSkill.name }}</span></div>
+  {% endif %}
+  {% if programmingSkill.percentage %}
+  <div class="progress">
+    <div class="progress-bar" style="width: {{ programmingSkill.percentage }}">
+      <span>{{ programmingSkill.percentage }} </span>
+    </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>

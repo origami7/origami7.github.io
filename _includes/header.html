@@ -1,42 +1,42 @@
 <div class="header">
   <div class="container-fluid">
-    <div style="display: inline-block; padding-left: 20px">
+    <div class="col-md-1" style="margin-right: 40px;">
       <img class="img-rounded" src="{{ site.author.gavatar }}" 
            title="Avatar" alt="My Avatar" style="height: 100px"/>
     </div>
-    <div style="display: inline-block; padding-left: 20px">
-      <span style="font-size: 20px">{{ site.author.name }}</span><br />
-      <span>{{ site.author.title }}</span>
+    <div class="col-md-10">
+      <div class="row" style="position: relative;">
+        <div class="col-md-3" >
+          <span style="font-size: 20px">{{ site.author.name }}</span><br />
+          <span>{{ site.author.title }}</span>
+        </div>
+        <div class="col-md-3" style="padding-top: 10px">
+          <span><i class="fa fa-envelope-o fa-fw"></i> {{ site.author.email }}</span> <br />
+          <span><i class="fa fa-linkedin-square fa-fw"></i>
+             <a href="https://linkedin.com/in/{{ site.author.linkedin }}" 
+                target="_blank"> linkedin.com/in/{{ site.author.linkedin }} </a></span>
+        </div>
+        <div class="col-md-3" style="padding-top: 10px">
+          <span><i class="fa fa-github fa-fw"></i>
+             <a href="https://github.com/{{ site.author.github }}" 
+                target="_blank">  {{ site.author.github }} </a></span><br />
+            <span><i class="fa fa-file-word-o" style="padding-left: 3px"></i>
+              <a href="https://docs.google.com/document/d/1LRQJ9CfAJPgr4EAeTcsao-4Ab5e5iMuCI0Y_yeWGsfY/edit?usp=sharing">View Resume</a>
+            </span>
+        </div>
+        <div class="col-md-2">
+          A blog with (hopefully) some posts.
+        </div>
+      </div>
+      <div class="row" style="padding-top:20px;">
+        <div class="col-md-10">
+          <span class="fa fa-quote-left" style="display:inline-block"></span>
+          Man, whoever invented these, yo, he off the hook.
+          <span class="fa fa-quote-right"></span>
+          &nbsp;&nbsp; -Wallace <i>from The Wire</i>
+        </div>
+      </div>
     </div>
-    <div style="display: inline-block; padding-left: 20px">
-      <span><i class="fa fa-envelope-o fa-fw"></i> {{ site.author.email }}</span> <br />
-      <span><i class="fa fa-linkedin-square fa-fw"></i>
-         <a href="https://linkedin.com/in/{{ site.author.linkedin }}" 
-            target="_blank"> linkedin.com/in/{{ site.author.linkedin }} </a></span>
-    </div>
-    <div style="display: inline-block; padding-left: 20px">
-      <span><i class="fa fa-github fa-fw"></i>
-         <a href="https://github.com/{{ site.author.github }}" 
-            target="_blank">  {{ site.author.github }} </a></span><br />
-        <span><i class="fa fa-file-word-o" style="padding-left: 3px"></i>
-          <a href="https://docs.google.com/document/d/1LRQJ9CfAJPgr4EAeTcsao-4Ab5e5iMuCI0Y_yeWGsfY/edit?usp=sharing">View Resume</a>
-        </span>
-    </div>
-    <div style="float: right; display: inline-block; padding-right: 20px;">
-      <span class="fa fa-quote-left" style="display:inline-block"></span>
-      Man, whoever invented these, yo, he off the hook.
-      <span class="fa fa-quote-right"></span>
-      <br />
-      -Wallace <i>from The Wire</i>
-    </div> 
-    <!--div style="margin-top: 20px; display: inline-block;">
-    <div class="well" style="padding: 0; margin-bottom: 0; max-height: 80px; max-width: 400px; overflow-y: scroll">
-        {% for programmingSkill in site.author.programmingSkills %}
-        {% if programmingSkill.name %}
-        <div style="display: inline-block; padding-top: 10px; padding-bottom: 10px;"><button class="btn btn-primary"  >{{ programmingSkill.name }}</button></div>
-        {% endif %}
-        {% endfor %}
-    </div>
-    </div-->
-</div>
+
+  </div>
 </div>
